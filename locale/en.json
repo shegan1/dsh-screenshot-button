@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Screenshot Button",
+    "description": "Adds a screenshot button to the composer tool row: capture directly or minimize the DSH window first, crop the shot, and attach it to the message draft."
+  }
+}

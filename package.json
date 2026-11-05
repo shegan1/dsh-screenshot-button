@@ -1,0 +1,54 @@
+{
+  "name": "dsh-screenshot-button",
+  "version": "1.0.0",
+  "description": "One-click screenshot for the DSH composer: scissors button (Shift+click hides the window first), native full-screen crop overlay with window detection, drag-to-move and 8-way resize, Windows only.",
+  "type": "module",
+  "license": "MIT",
+  "author": "shegan1",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "screenshot",
+    "screen-capture",
+    "crop",
+    "windows"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "crop-form.cs",
+    "crop-server.ps1",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "screenshots.json",
+    "assets/icon-180.png",
+    "LICENSE",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shegan1/dsh-screenshot-button.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shegan1/dsh-screenshot-button/issues"
+  },
+  "homepage": "https://github.com/shegan1/dsh-screenshot-button#readme",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}
