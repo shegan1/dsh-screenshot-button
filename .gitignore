@@ -1,0 +1,5 @@
+node_modules/
+*.log
+.dsh-screenshot-debug.jsonl
+DEVLOG.md
+tmp-catalog-entry.yml
